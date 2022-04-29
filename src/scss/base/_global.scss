@@ -1,0 +1,62 @@
+// GLOBAL STYLE
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: $main-font-primary;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: circle;
+  padding-left: 45px;
+}
+
+a {
+  text-decoration: none;
+  color: name-color(text);
+}
+
+.container {
+  max-width: $container-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include set-background($primary-color);
+  border-radius: 10px;
+}
+
+main {
+  padding: 1em;
+  @include set-background($bg-color);
+  letter-spacing: 1.5px;
+
+  h1 {
+    font-size: 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-family: $main-font-secondary;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+
+  h2 {
+    margin: 20px 0;
+  }
+
+  h3 {
+    text-align: center;
+    border-bottom: 2px solid $bg-color;
+    padding-bottom: 25px;
+  }
+
+  aside {
+    padding: 40px 0 80px;
+  }
+}
